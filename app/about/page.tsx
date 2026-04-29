@@ -7,10 +7,12 @@ const skills = [
 ];
 
 const timeline = [
-  { year: "2025", event: "即将毕业，入职 AI 应用方向" },
-  { year: "2024", event: "研究生阶段深入 AI 应用工程，完成多个落地项目" },
-  { year: "2022", event: "考入北京大学，开始研究生学习" },
-  { year: "2022", event: "本科毕业，初识 AI 的魅力" },
+  { year: "2026", event: "即将毕业，入职 AI 应用方向" },
+  { year: "2025", event: "腾讯实习，参与 AI 应用项目" },
+  { year: "2025", event: "初入社会，第一次租房" },
+  { year: "2023", event: "考入北京大学，开始研究生学习" },
+  { year: "2023", event: "本科毕业，初识 AI 的魅力" },
+  { year: "2019", event: "考入福州大学，开始本科学习" }
 ];
 
 export default function About() {
