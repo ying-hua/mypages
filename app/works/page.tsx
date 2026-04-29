@@ -1,54 +1,25 @@
 import FadeIn from "@/components/fade-in";
+import Link from "next/link";
 
 const works = [
   {
     id: "1",
-    title: "AI 对话助手",
-    desc: "基于大语言模型的智能客服系统，支持多轮对话与知识库检索，大幅降低人工客服压力。",
+    title: "极简图片工具箱",
+    desc: "纯本地处理 · 隐私安全 · 即开即用",
     tag: "AI · 工程",
-    year: "2024",
-    tech: ["Python", "LangChain", "FastAPI", "React"],
+    year: "2026",
+    tech: ["TypeScript", "Pyodide", "Canvas", "React"],
+    link: "https://app-8rgbkdgemb5t.appmiaoda.com/",
   },
   {
     id: "2",
-    title: "文档智能解析",
-    desc: "上传 PDF / Word 即可自动提炼摘要、生成问答，支持自定义模板，节省 80% 阅读时间。",
-    tag: "NLP · 产品",
-    year: "2024",
-    tech: ["LlamaIndex", "GPT-4o", "Next.js"],
-  },
-  {
-    id: "3",
-    title: "个人知识图谱",
-    desc: "将笔记、文章结构化为可探索的知识网络，辅助思考与回顾，让碎片化信息产生连接。",
-    tag: "知识管理",
-    year: "2025",
-    tech: ["Python", "Neo4j", "Embedding"],
-  },
-  {
-    id: "4",
-    title: "代码评审 Agent",
-    desc: "自动分析 Git diff，生成结构化评审意见，支持接入 GitHub PR 工作流，提升团队效率。",
-    tag: "DevTool · AI",
-    year: "2025",
-    tech: ["Claude API", "GitHub Actions", "TypeScript"],
-  },
-  {
-    id: "5",
-    title: "多模态内容生成",
-    desc: "根据简单描述自动生成图文并茂的长文章，结合 DALL-E 配图与 GPT-4o 写作，一键成稿。",
-    tag: "多模态",
-    year: "2024",
-    tech: ["GPT-4o", "DALL-E 3", "Next.js"],
-  },
-  {
-    id: "6",
-    title: "会议纪要自动化",
-    desc: "录音上传即出纪要——转写、归纳行动项、分配责任人，会议效率直接翻倍。",
-    tag: "语音 · AI",
-    year: "2023",
-    tech: ["Whisper", "GPT-4", "FastAPI"],
-  },
+    title: "双人抢红包小游戏",
+    desc: "春节聚会必备 · 策略博弈 · 谁拿到炸弹谁输",
+    tag: "游戏 · 博弈",
+    year: "2026",
+    tech: ["TypeScript", "AI"],
+    link: "https://app-9gs6686wcoox.appmiaoda.com/",
+  }
 ];
 
 export default function Works() {
@@ -93,8 +64,15 @@ export default function Works() {
 }
 
 function WorkCard({ work }: { work: (typeof works)[0] }) {
+  const isExternal = work.link.startsWith("http");
+
   return (
-    <div className="group relative bg-[#17171D] border border-[#28283A] rounded-2xl p-6 flex flex-col gap-4 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_8px_30px_rgba(0,0,0,0.5)] hover:border-[#C68B59]">
+    <Link 
+      href={work.link} 
+      target={isExternal ? "_blank" : "_self"}
+      rel={isExternal ? "noopener noreferrer" : undefined}
+      className="group relative bg-[#17171D] border border-[#28283A] rounded-2xl p-6 flex flex-col gap-4 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_8px_30px_rgba(0,0,0,0.5)] hover:border-[#C68B59] block h-full cursor-pointer"
+    >
       {/* Tape */}
       <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-10 h-5 rounded-sm opacity-30 rotate-1 bg-[#28283A]" />
 
@@ -133,6 +111,6 @@ function WorkCard({ work }: { work: (typeof works)[0] }) {
           </span>
         ))}
       </div>
-    </div>
+    </Link>
   );
 }

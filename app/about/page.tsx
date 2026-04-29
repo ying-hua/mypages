@@ -133,25 +133,6 @@ export default function About() {
           </div>
         </div>
       </FadeIn>
-
-      {/* Contact */}
-      <FadeIn delay={0.5}>
-        <div className="mt-20 p-8 bg-[#17171D] rounded-2xl border border-[#28283A] text-center">
-          <p style={{ fontFamily: "var(--font-caveat)" }} className="text-[#C68B59] text-2xl mb-3">
-            来聊聊？
-          </p>
-          <p style={{ fontFamily: "var(--font-lora)" }} className="text-[#8A7868] mb-5 text-sm">
-            无论是合作、交流还是随便聊聊，我的邮箱随时敞开。
-          </p>
-          <a
-            href="mailto:139152599yh@gmail.com"
-            style={{ fontFamily: "var(--font-lora)" }}
-            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#B5532A] text-[#EDE4D8] text-sm hover:bg-[#D4643A] transition-colors"
-          >
-            发封邮件
-          </a>
-        </div>
-      </FadeIn>
     </div>
   );
 }
