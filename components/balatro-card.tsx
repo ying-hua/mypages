@@ -122,20 +122,20 @@ export default function BalatroCard({
           aria-hidden
           className="pointer-events-none absolute inset-0 z-10 rounded-[28px]"
           style={{
-            background: `linear-gradient(
+            background: `repeating-linear-gradient(
               calc(45deg + var(--rx, 0) * 30deg),
               hsl(0,   92%, 66%) 0%,
-              hsl(30,  90%, 66%) 9%,
-              hsl(60,  88%, 66%) 18%,
-              hsl(90,  86%, 66%) 27%,
-              hsl(120, 88%, 66%) 36%,
-              hsl(150, 86%, 66%) 45%,
-              hsl(180, 88%, 66%) 54%,
-              hsl(210, 86%, 66%) 63%,
-              hsl(240, 88%, 66%) 72%,
-              hsl(270, 86%, 66%) 81%,
-              hsl(300, 88%, 66%) 90%,
-              hsl(360, 92%, 66%) 100%
+              hsl(30,  90%, 66%) 3%,
+              hsl(60,  88%, 66%) 6%,
+              hsl(90,  86%, 66%) 9%,
+              hsl(120, 88%, 66%) 12%,
+              hsl(150, 86%, 66%) 15%,
+              hsl(180, 88%, 66%) 18%,
+              hsl(210, 86%, 66%) 21%,
+              hsl(240, 88%, 66%) 24%,
+              hsl(270, 86%, 66%) 27%,
+              hsl(300, 88%, 66%) 30%,
+              hsl(360, 92%, 66%) 33.33%
             )`,
             backgroundSize: "200% 200%",
             backgroundPosition:

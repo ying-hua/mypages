@@ -149,7 +149,7 @@ function CardContent() {
         style={{ fontFamily: "var(--font-lora)" }}
         className="mt-6 max-w-2xl text-center text-base leading-relaxed text-[#8A7868] md:text-lg"
       >
-        这是一张<span className="text-[#C68B59] font-semibold">镭射全息</span>风格的卡片。
+        这是一张<span className="mx-1 font-bold"><span className="animate-rainbow-text" style={{ animationDelay: "0s, 0s" }}>彩</span><span className="animate-rainbow-text" style={{ animationDelay: "0s, 0.2s" }}>虹</span></span>风格的卡片。
         <br />
         试试把鼠标移到上面，看彩虹光怎么在卡面上漂移——
         <br />
