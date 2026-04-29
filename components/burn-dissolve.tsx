@@ -148,8 +148,9 @@ export default function BurnDissolve({
         rafRef.current = requestAnimationFrame(frame);
       } else {
         // Clean up and signal completion.
-        inner!.style.removeProperty("-webkit-mask-image");
-        inner!.style.removeProperty("mask-image");
+        // 在这不立刻移除 mask，否则在 React 卸载组件的这1帧间隙里，卡片会失去遮罩而瞬间全显（闪烁）。
+        // 直接将透明度设为 0 来保证安全。
+        inner!.style.opacity = "0";
         rafRef.current = null;
         t0Ref.current  = null;
         onComplete();
