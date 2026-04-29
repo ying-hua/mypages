@@ -2,7 +2,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="px-6 py-10 md:px-12 border-t border-[#E8D5C4] flex flex-col items-center gap-3">
+    <footer className="px-6 py-10 md:px-12 border-t border-[#28283A] flex flex-col items-center gap-3">
       {/* Hand-drawn divider */}
       <svg width="120" height="12" viewBox="0 0 120 12" fill="none" className="mb-1 opacity-40">
         <path
@@ -24,7 +24,7 @@ export default function Footer() {
 
       <p
         style={{ fontFamily: "var(--font-lora)" }}
-        className="text-xs text-[#6B5344] tracking-widest"
+        className="text-xs text-[#8A7868] tracking-widest"
       >
         © {year} · 手工精心制作
       </p>

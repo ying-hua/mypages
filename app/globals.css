@@ -24,8 +24,8 @@ html {
 }
 
 body {
-  background-color: #FAF6EF;
-  color: #3A2E26;
+  background-color: #0E0E12;
+  color: #EDE4D8;
   font-family: var(--font-lora), Georgia, serif;
   min-height: 100vh;
 }
@@ -46,5 +46,5 @@ body::after {
 }
 
 ::-webkit-scrollbar { width: 5px; }
-::-webkit-scrollbar-track { background: #F2EBE0; }
+::-webkit-scrollbar-track { background: #17171D; }
 ::-webkit-scrollbar-thumb { background: #C68B59; border-radius: 3px; }

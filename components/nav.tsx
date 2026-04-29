@@ -12,11 +12,11 @@ export default function Nav() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 px-6 py-4 md:px-12 flex items-center justify-between bg-[#FAF6EF]/90 backdrop-blur-sm border-b border-[#E8D5C4]">
+    <header className="sticky top-0 z-50 px-6 py-4 md:px-12 flex items-center justify-between bg-[#0E0E12]/85 backdrop-blur-md border-b border-[#28283A]">
       <Link
         href="/"
         style={{ fontFamily: "var(--font-caveat)" }}
-        className="text-2xl text-[#B5532A] tracking-wide hover:opacity-70 transition-opacity"
+        className="text-2xl text-[#D4643A] tracking-wide hover:opacity-70 transition-opacity"
       >
         Astro
       </Link>
@@ -28,8 +28,8 @@ export default function Nav() {
             href={href}
             className={`text-sm tracking-widest uppercase transition-colors ${
               pathname === href
-                ? "text-[#B5532A] font-semibold"
-                : "text-[#6B5344] hover:text-[#B5532A]"
+                ? "text-[#D4643A] font-semibold"
+                : "text-[#8A7868] hover:text-[#C68B59]"
             }`}
             style={{ fontFamily: "var(--font-lora)" }}
           >
