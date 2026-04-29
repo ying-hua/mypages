@@ -43,6 +43,15 @@ export default function HomeVideoOverlay() {
   const onBurnComplete = useCallback(() => {
     setShown(false);
     setIsBurning(false);
+    
+    // Completely closed, restart video from 0s to create a loop
+    const v = videoRef.current;
+    if (v) {
+      v.currentTime = 0;
+      v.play().catch(() => {});
+    }
+    // Reset trigger to allow popping up again at 3s
+    triggeredRef.current = false;
   }, []);
 
   // ESC triggers burn.
